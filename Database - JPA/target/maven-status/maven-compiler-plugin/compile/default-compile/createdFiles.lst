@@ -1,0 +1,7 @@
+com\siddydevelops\Database\domain\Author.class
+com\siddydevelops\Database\domain\Author$AuthorBuilder.class
+com\siddydevelops\Database\repositories\AuthorRepository.class
+com\siddydevelops\Database\domain\Book$BookBuilder.class
+com\siddydevelops\Database\repositories\BookRepository.class
+com\siddydevelops\Database\domain\Book.class
+com\siddydevelops\Database\DatabaseApplication.class

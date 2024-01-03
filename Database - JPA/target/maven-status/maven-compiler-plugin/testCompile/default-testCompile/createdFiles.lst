@@ -1,0 +1,4 @@
+com\siddydevelops\Database\repositories\BookRepositoryIntegrationTests.class
+com\siddydevelops\Database\TestDataUtil.class
+com\siddydevelops\Database\DatabaseApplicationTests.class
+com\siddydevelops\Database\repositories\AuthorRepositoryIntegrationTests.class
