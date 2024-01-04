@@ -6,3 +6,4 @@
 - Data Access Object (DAO) Architecture
 - JPI Framework & Repository Structure
 - Unit Test & Integration Tests
+- REST API: Books&Author API with CRUD Operations, Pagination 
