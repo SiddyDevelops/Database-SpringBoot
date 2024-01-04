@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.siddydevelops.Database.repositories.AuthorEntityRepositoryIntegrationTests" time="3.088" tests="5" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\siddh\IdeaProjects\Database\Database - JPA\target\test-classes;C:\Users\siddh\IdeaProjects\Database\Database - JPA\target\classes;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.1\spring-boot-starter-web-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.1\spring-boot-starter-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot\3.2.1\spring-boot-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.1\spring-boot-autoconfigure-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.1\spring-boot-starter-logging-3.2.1.jar;C:\Users\siddh\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\siddh\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\siddh\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\siddh\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\siddh\.m2\repository\org\slf4j\jul-to-slf4j\2.0.9\jul-to-slf4j-2.0.9.jar;C:\Users\siddh\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\siddh\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.1\spring-boot-starter-json-3.2.1.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.3\jackson-datatype-jdk8-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.3\jackson-datatype-jsr310-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.3\jackson-module-parameter-names-2.15.3.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.1\spring-boot-starter-tomcat-3.2.1.jar;C:\Users\siddh\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.17\tomcat-embed-core-10.1.17.jar;C:\Users\siddh\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.17\tomcat-embed-el-10.1.17.jar;C:\Users\siddh\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.17\tomcat-embed-websocket-10.1.17.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-web\6.1.2\spring-web-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-beans\6.1.2\spring-beans-6.1.2.jar;C:\Users\siddh\.m2\repository\io\micrometer\micrometer-observation\1.12.1\micrometer-observation-1.12.1.jar;C:\Users\siddh\.m2\repository\io\micrometer\micrometer-commons\1.12.1\micrometer-commons-1.12.1.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-webmvc\6.1.2\spring-webmvc-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-aop\6.1.2\spring-aop-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-context\6.1.2\spring-context-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-expression\6.1.2\spring-expression-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.1\spring-boot-starter-data-jpa-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.1\spring-boot-starter-aop-3.2.1.jar;C:\Users\siddh\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.1\spring-boot-starter-jdbc-3.2.1.jar;C:\Users\siddh\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-jdbc\6.1.2\spring-jdbc-6.1.2.jar;C:\Users\siddh\.m2\repository\org\hibernate\orm\hibernate-core\6.4.1.Final\hibernate-core-6.4.1.Final.jar;C:\Users\siddh\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\siddh\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\siddh\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\siddh\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\siddh\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\siddh\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\siddh\.m2\repository\net\bytebuddy\byte-buddy\1.14.10\byte-buddy-1.14.10.jar;C:\Users\siddh\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\siddh\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\siddh\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\siddh\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\siddh\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\siddh\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\siddh\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\siddh\.m2\repository\org\springframework\data\spring-data-jpa\3.2.1\spring-data-jpa-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\data\spring-data-commons\3.2.1\spring-data-commons-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-orm\6.1.2\spring-orm-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-tx\6.1.2\spring-tx-6.1.2.jar;C:\Users\siddh\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-aspects\6.1.2\spring-aspects-6.1.2.jar;C:\Users\siddh\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\siddh\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\siddh\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\siddh\.m2\repository\org\modelmapper\modelmapper\3.0.0\modelmapper-3.0.0.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.1\spring-boot-starter-test-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-test\3.2.1\spring-boot-test-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.1\spring-boot-test-autoconfigure-3.2.1.jar;C:\Users\siddh\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\siddh\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\siddh\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\siddh\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\siddh\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\siddh\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\siddh\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\siddh\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\siddh\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\siddh\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;C:\Users\siddh\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\siddh\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\siddh\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\siddh\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\siddh\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\siddh\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\siddh\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\siddh\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\siddh\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar;C:\Users\siddh\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\siddh\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\siddh\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\siddh\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-core\6.1.2\spring-core-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-jcl\6.1.2\spring-jcl-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-test\6.1.2\spring-test-6.1.2.jar;C:\Users\siddh\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\siddh\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\siddh\.jdks\corretto-17.0.9\bin"/>
+    <property name="sun.java.command" value="C:\Users\siddh\AppData\Local\Temp\surefire1943543517374113608\surefirebooter-20240103223154448_3.jar C:\Users\siddh\AppData\Local\Temp\surefire1943543517374113608 2024-01-03T22-31-53_860-jvmRun1 surefire-20240103223154448_1tmp surefire_0-20240103223154448_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\siddh\IdeaProjects\Database\Database - JPA\target\test-classes;C:\Users\siddh\IdeaProjects\Database\Database - JPA\target\classes;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.1\spring-boot-starter-web-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.1\spring-boot-starter-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot\3.2.1\spring-boot-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.1\spring-boot-autoconfigure-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.1\spring-boot-starter-logging-3.2.1.jar;C:\Users\siddh\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\siddh\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\siddh\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\siddh\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\siddh\.m2\repository\org\slf4j\jul-to-slf4j\2.0.9\jul-to-slf4j-2.0.9.jar;C:\Users\siddh\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\siddh\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.1\spring-boot-starter-json-3.2.1.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.3\jackson-datatype-jdk8-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.3\jackson-datatype-jsr310-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.3\jackson-module-parameter-names-2.15.3.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.1\spring-boot-starter-tomcat-3.2.1.jar;C:\Users\siddh\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.17\tomcat-embed-core-10.1.17.jar;C:\Users\siddh\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.17\tomcat-embed-el-10.1.17.jar;C:\Users\siddh\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.17\tomcat-embed-websocket-10.1.17.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-web\6.1.2\spring-web-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-beans\6.1.2\spring-beans-6.1.2.jar;C:\Users\siddh\.m2\repository\io\micrometer\micrometer-observation\1.12.1\micrometer-observation-1.12.1.jar;C:\Users\siddh\.m2\repository\io\micrometer\micrometer-commons\1.12.1\micrometer-commons-1.12.1.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-webmvc\6.1.2\spring-webmvc-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-aop\6.1.2\spring-aop-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-context\6.1.2\spring-context-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-expression\6.1.2\spring-expression-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.1\spring-boot-starter-data-jpa-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.1\spring-boot-starter-aop-3.2.1.jar;C:\Users\siddh\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.1\spring-boot-starter-jdbc-3.2.1.jar;C:\Users\siddh\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-jdbc\6.1.2\spring-jdbc-6.1.2.jar;C:\Users\siddh\.m2\repository\org\hibernate\orm\hibernate-core\6.4.1.Final\hibernate-core-6.4.1.Final.jar;C:\Users\siddh\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\siddh\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\siddh\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\siddh\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\siddh\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\siddh\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\siddh\.m2\repository\net\bytebuddy\byte-buddy\1.14.10\byte-buddy-1.14.10.jar;C:\Users\siddh\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\siddh\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\siddh\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\siddh\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\siddh\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\siddh\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\siddh\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\siddh\.m2\repository\org\springframework\data\spring-data-jpa\3.2.1\spring-data-jpa-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\data\spring-data-commons\3.2.1\spring-data-commons-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-orm\6.1.2\spring-orm-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-tx\6.1.2\spring-tx-6.1.2.jar;C:\Users\siddh\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-aspects\6.1.2\spring-aspects-6.1.2.jar;C:\Users\siddh\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\siddh\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\siddh\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\siddh\.m2\repository\org\modelmapper\modelmapper\3.0.0\modelmapper-3.0.0.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.1\spring-boot-starter-test-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-test\3.2.1\spring-boot-test-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.1\spring-boot-test-autoconfigure-3.2.1.jar;C:\Users\siddh\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\siddh\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\siddh\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\siddh\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\siddh\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\siddh\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\siddh\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\siddh\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\siddh\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\siddh\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;C:\Users\siddh\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\siddh\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\siddh\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\siddh\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\siddh\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\siddh\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\siddh\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\siddh\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\siddh\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar;C:\Users\siddh\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\siddh\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\siddh\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\siddh\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-core\6.1.2\spring-core-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-jcl\6.1.2\spring-jcl-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-test\6.1.2\spring-test-6.1.2.jar;C:\Users\siddh\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\siddh\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\siddh"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Users\siddh\.jdks\corretto-17.0.9"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\siddh\IdeaProjects\Database\Database - JPA"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="windows-1252"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\siddh\AppData\Local\Temp\surefire1943543517374113608\surefirebooter-20240103223154448_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.9+8-LTS"/>
+    <property name="user.name" value="siddh"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-17.0.9.8.1"/>
+    <property name="localRepository" value="C:\Users\siddh\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\siddh\AppData\Local\Temp\"/>
+    <property name="com.zaxxer.hikari.pool_number" value="24"/>
+    <property name="java.version" value="17.0.9"/>
+    <property name="user.dir" value="C:\Users\siddh\IdeaProjects\Database\Database - JPA"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="18436"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="windows-1252"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\siddh\.jdks\corretto-17.0.9\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Python311\Scripts\;C:\Program Files\Python311\;C:\DataBase\WINDOWS.X64_193000_db_home\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\msys64\mingw64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\siddh\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\siddh\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\php-8.2.11;;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\siddh\AppData\Local\Microsoft\WindowsApps;C:\Users\siddh\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\siddh\AppData\Local\Programs\Hyper\resources\bin;C:\Program Files\heroku\bin;C:\Users\siddh\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2022.2\bin;;C:\Apache Maven\bin;C:\Users\siddh\AppData\Roaming\npm;C:\Users\siddh\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Python311;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="17.0.9+8-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testThatAuthorCanBeUpdated" classname="com.siddydevelops.Database.repositories.AuthorEntityRepositoryIntegrationTests" time="0.069">
+    <error message="could not prepare statement [Table &quot;authors&quot; not found (this database is empty); SQL statement:&#10;select ae1_0.id,ae1_0.age,ae1_0.name from authors ae1_0 where ae1_0.id=? [42104-224]] [select ae1_0.id,ae1_0.age,ae1_0.name from authors ae1_0 where ae1_0.id=?]; SQL [select ae1_0.id,ae1_0.age,ae1_0.name from authors ae1_0 where ae1_0.id=?]" type="org.springframework.dao.InvalidDataAccessResourceUsageException"><![CDATA[org.springframework.dao.InvalidDataAccessResourceUsageException: 
+could not prepare statement [Table "authors" not found (this database is empty); SQL statement:
+select ae1_0.id,ae1_0.age,ae1_0.name from authors ae1_0 where ae1_0.id=? [42104-224]] [select ae1_0.id,ae1_0.age,ae1_0.name from authors ae1_0 where ae1_0.id=?]; SQL [select ae1_0.id,ae1_0.age,ae1_0.name from authors ae1_0 where ae1_0.id=?]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:277)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:249)
+	at jdk.proxy2/jdk.proxy2.$Proxy120.save(Unknown Source)
+	at com.siddydevelops.Database.repositories.AuthorEntityRepositoryIntegrationTests.testThatAuthorCanBeUpdated(AuthorEntityRepositoryIntegrationTests.java:54)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement [Table "authors" not found (this database is empty); SQL statement:
+select ae1_0.id,ae1_0.age,ae1_0.name from authors ae1_0 where ae1_0.id=? [42104-224]] [select ae1_0.id,ae1_0.age,ae1_0.name from authors ae1_0 where ae1_0.id=?]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:194)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:155)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.lambda$list$0(JdbcSelectExecutor.java:85)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:231)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:167)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.advanceNext(JdbcValuesResultSetImpl.java:218)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.processNext(JdbcValuesResultSetImpl.java:98)
+	at org.hibernate.sql.results.jdbc.internal.AbstractJdbcValues.next(AbstractJdbcValues.java:19)
+	at org.hibernate.sql.results.internal.RowProcessingStateStandardImpl.next(RowProcessingStateStandardImpl.java:66)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:188)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:33)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:209)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:83)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:76)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:65)
+	at org.hibernate.loader.ast.internal.SingleIdLoadPlan.load(SingleIdLoadPlan.java:145)
+	at org.hibernate.loader.ast.internal.SingleIdLoadPlan.load(SingleIdLoadPlan.java:117)
+	at org.hibernate.loader.ast.internal.SingleIdEntityLoaderStandardImpl.load(SingleIdEntityLoaderStandardImpl.java:75)
+	at org.hibernate.persister.entity.AbstractEntityPersister.doLoad(AbstractEntityPersister.java:3715)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:3704)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:604)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromCacheOrDatasource(DefaultLoadEventListener.java:590)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:560)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:544)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:207)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadWithRegularProxy(DefaultLoadEventListener.java:290)
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:242)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:111)
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:68)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138)
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1242)
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1230)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.load(IdentifierLoadAccessImpl.java:209)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.doLoad(IdentifierLoadAccessImpl.java:160)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.lambda$load$1(IdentifierLoadAccessImpl.java:149)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.perform(IdentifierLoadAccessImpl.java:112)
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.load(IdentifierLoadAccessImpl.java:149)
+	at org.hibernate.internal.SessionImpl.get(SessionImpl.java:1043)
+	at org.hibernate.event.internal.DefaultMergeEventListener.lambda$entityIsDetached$0(DefaultMergeEventListener.java:336)
+	at org.hibernate.engine.spi.LoadQueryInfluencers.fromInternalFetchProfile(LoadQueryInfluencers.java:99)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:334)
+	at org.hibernate.event.internal.DefaultMergeEventListener.merge(DefaultMergeEventListener.java:150)
+	at org.hibernate.event.internal.DefaultMergeEventListener.doMerge(DefaultMergeEventListener.java:143)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:127)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:81)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:867)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:853)
+	at jdk.internal.reflect.GeneratedMethodAccessor187.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
+	at jdk.proxy2/jdk.proxy2.$Proxy115.merge(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:621)
+	at jdk.internal.reflect.GeneratedMethodAccessor188.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 11 more
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "authors" not found (this database is empty); SQL statement:
+select ae1_0.id,ae1_0.age,ae1_0.name from authors ae1_0 where ae1_0.id=? [42104-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8051)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8035)
+	at org.h2.command.Parser.readTableOrView(Parser.java:8024)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1788)
+	at org.h2.command.Parser.readTableReference(Parser.java:2268)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2718)
+	at org.h2.command.Parser.parseSelect(Parser.java:2824)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2708)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2564)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2543)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2536)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2529)
+	at org.h2.command.Parser.parseQuery(Parser.java:2498)
+	at org.h2.command.Parser.parsePrepared(Parser.java:627)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepareCommand(Parser.java:483)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:316)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:327)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:153)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:183)
+	... 83 more
+]]></error>
+    <system-out><![CDATA[2024-01-03T22:32:26.102+05:30  INFO 18436 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.siddydevelops.Database.repositories.AuthorEntityRepositoryIntegrationTests]: AuthorEntityRepositoryIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-03T22:32:26.121+05:30  INFO 18436 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.siddydevelops.Database.BooksApiApplication for test class com.siddydevelops.Database.repositories.AuthorEntityRepositoryIntegrationTests
+2024-01-03T22:32:26.144+05:30  WARN 18436 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42104, SQLState: 42S04
+2024-01-03T22:32:26.144+05:30 ERROR 18436 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table "authors" not found (this database is empty); SQL statement:
+select ae1_0.id,ae1_0.age,ae1_0.name from authors ae1_0 where ae1_0.id=? [42104-224]
+2024-01-03T22:32:26.147+05:30  INFO 18436 --- [           main] o.h.e.internal.DefaultLoadEventListener  : HHH000327: Error performing load command
+
+org.hibernate.exception.SQLGrammarException: could not prepare statement [Table "authors" not found (this database is empty); SQL statement:
+select ae1_0.id,ae1_0.age,ae1_0.name from authors ae1_0 where ae1_0.id=? [42104-224]] [select ae1_0.id,ae1_0.age,ae1_0.name from authors ae1_0 where ae1_0.id=?]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:194) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:155) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.lambda$list$0(JdbcSelectExecutor.java:85) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:231) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:167) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.advanceNext(JdbcValuesResultSetImpl.java:218) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.processNext(JdbcValuesResultSetImpl.java:98) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.results.jdbc.internal.AbstractJdbcValues.next(AbstractJdbcValues.java:19) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.results.internal.RowProcessingStateStandardImpl.next(RowProcessingStateStandardImpl.java:66) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:188) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:33) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:209) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:83) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:76) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:65) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.loader.ast.internal.SingleIdLoadPlan.load(SingleIdLoadPlan.java:145) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.loader.ast.internal.SingleIdLoadPlan.load(SingleIdLoadPlan.java:117) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.loader.ast.internal.SingleIdEntityLoaderStandardImpl.load(SingleIdEntityLoaderStandardImpl.java:75) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.doLoad(AbstractEntityPersister.java:3715) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:3704) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:604) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromCacheOrDatasource(DefaultLoadEventListener.java:590) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:560) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:544) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:207) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadWithRegularProxy(DefaultLoadEventListener.java:290) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:242) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:111) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:68) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1242) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1230) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.load(IdentifierLoadAccessImpl.java:209) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.doLoad(IdentifierLoadAccessImpl.java:160) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.lambda$load$1(IdentifierLoadAccessImpl.java:149) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.perform(IdentifierLoadAccessImpl.java:112) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.load(IdentifierLoadAccessImpl.java:149) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.internal.SessionImpl.get(SessionImpl.java:1043) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.lambda$entityIsDetached$0(DefaultMergeEventListener.java:336) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.engine.spi.LoadQueryInfluencers.fromInternalFetchProfile(LoadQueryInfluencers.java:99) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:334) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.merge(DefaultMergeEventListener.java:150) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.doMerge(DefaultMergeEventListener.java:143) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:127) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:81) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:867) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:853) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at jdk.internal.reflect.GeneratedMethodAccessor187.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319) ~[spring-orm-6.1.2.jar:6.1.2]
+	at jdk.proxy2/jdk.proxy2.$Proxy115.merge(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:621) ~[spring-data-jpa-3.2.1.jar:3.2.1]
+	at jdk.internal.reflect.GeneratedMethodAccessor188.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277) ~[spring-data-commons-3.2.1.jar:3.2.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.2.1.jar:3.2.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.2.1.jar:3.2.1]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516) ~[spring-data-commons-3.2.1.jar:3.2.1]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-3.2.1.jar:3.2.1]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628) ~[spring-data-commons-3.2.1.jar:3.2.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168) ~[spring-data-commons-3.2.1.jar:3.2.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.2.1.jar:3.2.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.2.jar:6.1.2]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385) ~[spring-tx-6.1.2.jar:6.1.2]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.2.jar:6.1.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.2.jar:6.1.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164) ~[spring-data-jpa-3.2.1.jar:3.2.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.2.jar:6.1.2]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:249) ~[spring-aop-6.1.2.jar:6.1.2]
+	at jdk.proxy2/jdk.proxy2.$Proxy120.save(Unknown Source) ~[na:na]
+	at com.siddydevelops.Database.repositories.AuthorEntityRepositoryIntegrationTests.testThatAuthorCanBeUpdated(AuthorEntityRepositoryIntegrationTests.java:54) ~[test-classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728) ~[junit-platform-commons-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) ~[surefire-junit-platform-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184) ~[surefire-junit-platform-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148) ~[surefire-junit-platform-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122) ~[surefire-junit-platform-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.1.2.jar:3.1.2]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "authors" not found (this database is empty); SQL statement:
+select ae1_0.id,ae1_0.age,ae1_0.name from authors ae1_0 where ae1_0.id=? [42104-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8051) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8035) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.readTableOrView(Parser.java:8024) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1788) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.readTableReference(Parser.java:2268) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2718) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parseSelect(Parser.java:2824) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2708) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2564) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2543) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2536) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2529) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parseQuery(Parser.java:2498) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parsePrepared(Parser.java:627) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parse(Parser.java:592) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parse(Parser.java:564) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.prepareCommand(Parser.java:483) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:316) ~[h2-2.2.224.jar:2.2.224]
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:327) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:153) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:183) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	... 151 common frames omitted
+
+2024-01-03T22:32:26.186+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:26.187+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-03T22:32:26.191+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="testThatAuthorCanBeDeleted" classname="com.siddydevelops.Database.repositories.AuthorEntityRepositoryIntegrationTests" time="0.174">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-03T22:32:26.241+05:30  INFO 18436 --- [           main] r.AuthorEntityRepositoryIntegrationTests : Starting AuthorEntityRepositoryIntegrationTests using Java 17.0.9 with PID 18436 (started by siddh in C:\Users\siddh\IdeaProjects\Database\Database - JPA)
+2024-01-03T22:32:26.241+05:30  INFO 18436 --- [           main] r.AuthorEntityRepositoryIntegrationTests : No active profile set, falling back to 1 default profile: "default"
+2024-01-03T22:32:26.492+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03T22:32:26.515+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2024-01-03T22:32:26.634+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Starting...
+2024-01-03T22:32:26.638+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-21 - Added connection conn200: url=jdbc:h2:mem:testdb user=SA
+2024-01-03T22:32:26.638+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Start completed.
+2024-01-03T22:32:26.641+05:30  INFO 18436 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03T22:32:26.650+05:30  INFO 18436 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-03T22:32:26.661+05:30  INFO 18436 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03T22:32:26.758+05:30  INFO 18436 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03T22:32:26.766+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:26.847+05:30  WARN 18436 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03T22:32:26.979+05:30  INFO 18436 --- [           main] r.AuthorEntityRepositoryIntegrationTests : Started AuthorEntityRepositoryIntegrationTests in 0.771 seconds (process running for 31.842)
+2024-01-03T22:32:27.152+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:27.153+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown initiated...
+2024-01-03T22:32:27.155+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="testThatMultipleAuthorsCanBeCreatedAndRecalled" classname="com.siddydevelops.Database.repositories.AuthorEntityRepositoryIntegrationTests" time="0.051">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-03T22:32:27.185+05:30  INFO 18436 --- [           main] r.AuthorEntityRepositoryIntegrationTests : Starting AuthorEntityRepositoryIntegrationTests using Java 17.0.9 with PID 18436 (started by siddh in C:\Users\siddh\IdeaProjects\Database\Database - JPA)
+2024-01-03T22:32:27.186+05:30  INFO 18436 --- [           main] r.AuthorEntityRepositoryIntegrationTests : No active profile set, falling back to 1 default profile: "default"
+2024-01-03T22:32:27.360+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03T22:32:27.377+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2024-01-03T22:32:27.455+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Starting...
+2024-01-03T22:32:27.458+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-22 - Added connection conn210: url=jdbc:h2:mem:testdb user=SA
+2024-01-03T22:32:27.458+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Start completed.
+2024-01-03T22:32:27.460+05:30  INFO 18436 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03T22:32:27.466+05:30  INFO 18436 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-03T22:32:27.472+05:30  INFO 18436 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03T22:32:27.526+05:30  INFO 18436 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03T22:32:27.531+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:27.598+05:30  WARN 18436 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03T22:32:27.700+05:30  INFO 18436 --- [           main] r.AuthorEntityRepositoryIntegrationTests : Started AuthorEntityRepositoryIntegrationTests in 0.543 seconds (process running for 32.563)
+2024-01-03T22:32:27.749+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:27.751+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown initiated...
+2024-01-03T22:32:27.752+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="testThatAuthorCanBeCreatedAndRecalled" classname="com.siddydevelops.Database.repositories.AuthorEntityRepositoryIntegrationTests" time="0.021">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-03T22:32:27.783+05:30  INFO 18436 --- [           main] r.AuthorEntityRepositoryIntegrationTests : Starting AuthorEntityRepositoryIntegrationTests using Java 17.0.9 with PID 18436 (started by siddh in C:\Users\siddh\IdeaProjects\Database\Database - JPA)
+2024-01-03T22:32:27.783+05:30  INFO 18436 --- [           main] r.AuthorEntityRepositoryIntegrationTests : No active profile set, falling back to 1 default profile: "default"
+2024-01-03T22:32:27.967+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03T22:32:27.983+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2024-01-03T22:32:28.069+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Starting...
+2024-01-03T22:32:28.072+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-23 - Added connection conn220: url=jdbc:h2:mem:testdb user=SA
+2024-01-03T22:32:28.072+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Start completed.
+2024-01-03T22:32:28.074+05:30  INFO 18436 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03T22:32:28.082+05:30  INFO 18436 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-03T22:32:28.091+05:30  INFO 18436 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03T22:32:28.165+05:30  INFO 18436 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03T22:32:28.173+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:28.274+05:30  WARN 18436 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03T22:32:28.446+05:30  INFO 18436 --- [           main] r.AuthorEntityRepositoryIntegrationTests : Started AuthorEntityRepositoryIntegrationTests in 0.69 seconds (process running for 33.309)
+2024-01-03T22:32:28.464+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:28.466+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown initiated...
+2024-01-03T22:32:28.468+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="testThatGetAuthorsWithAgeLessThan" classname="com.siddydevelops.Database.repositories.AuthorEntityRepositoryIntegrationTests" time="0.13">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-03T22:32:28.496+05:30  INFO 18436 --- [           main] r.AuthorEntityRepositoryIntegrationTests : Starting AuthorEntityRepositoryIntegrationTests using Java 17.0.9 with PID 18436 (started by siddh in C:\Users\siddh\IdeaProjects\Database\Database - JPA)
+2024-01-03T22:32:28.497+05:30  INFO 18436 --- [           main] r.AuthorEntityRepositoryIntegrationTests : No active profile set, falling back to 1 default profile: "default"
+2024-01-03T22:32:28.656+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03T22:32:28.672+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2024-01-03T22:32:28.758+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Starting...
+2024-01-03T22:32:28.761+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-24 - Added connection conn230: url=jdbc:h2:mem:testdb user=SA
+2024-01-03T22:32:28.761+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Start completed.
+2024-01-03T22:32:28.764+05:30  INFO 18436 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03T22:32:28.770+05:30  INFO 18436 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-03T22:32:28.777+05:30  INFO 18436 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03T22:32:28.837+05:30  INFO 18436 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03T22:32:28.842+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:28.911+05:30  WARN 18436 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03T22:32:29.053+05:30  INFO 18436 --- [           main] r.AuthorEntityRepositoryIntegrationTests : Started AuthorEntityRepositoryIntegrationTests in 0.582 seconds (process running for 33.916)
+2024-01-03T22:32:29.181+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:29.183+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown initiated...
+2024-01-03T22:32:29.185+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown completed.
+]]></system-out>
+  </testcase>
+</testsuite>

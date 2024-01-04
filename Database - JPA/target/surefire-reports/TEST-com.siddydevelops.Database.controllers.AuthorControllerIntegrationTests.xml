@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.siddydevelops.Database.controllers.AuthorControllerIntegrationTests" time="10.966" tests="10" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\siddh\IdeaProjects\Database\Database - JPA\target\test-classes;C:\Users\siddh\IdeaProjects\Database\Database - JPA\target\classes;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.1\spring-boot-starter-web-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.1\spring-boot-starter-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot\3.2.1\spring-boot-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.1\spring-boot-autoconfigure-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.1\spring-boot-starter-logging-3.2.1.jar;C:\Users\siddh\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\siddh\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\siddh\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\siddh\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\siddh\.m2\repository\org\slf4j\jul-to-slf4j\2.0.9\jul-to-slf4j-2.0.9.jar;C:\Users\siddh\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\siddh\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.1\spring-boot-starter-json-3.2.1.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.3\jackson-datatype-jdk8-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.3\jackson-datatype-jsr310-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.3\jackson-module-parameter-names-2.15.3.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.1\spring-boot-starter-tomcat-3.2.1.jar;C:\Users\siddh\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.17\tomcat-embed-core-10.1.17.jar;C:\Users\siddh\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.17\tomcat-embed-el-10.1.17.jar;C:\Users\siddh\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.17\tomcat-embed-websocket-10.1.17.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-web\6.1.2\spring-web-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-beans\6.1.2\spring-beans-6.1.2.jar;C:\Users\siddh\.m2\repository\io\micrometer\micrometer-observation\1.12.1\micrometer-observation-1.12.1.jar;C:\Users\siddh\.m2\repository\io\micrometer\micrometer-commons\1.12.1\micrometer-commons-1.12.1.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-webmvc\6.1.2\spring-webmvc-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-aop\6.1.2\spring-aop-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-context\6.1.2\spring-context-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-expression\6.1.2\spring-expression-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.1\spring-boot-starter-data-jpa-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.1\spring-boot-starter-aop-3.2.1.jar;C:\Users\siddh\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.1\spring-boot-starter-jdbc-3.2.1.jar;C:\Users\siddh\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-jdbc\6.1.2\spring-jdbc-6.1.2.jar;C:\Users\siddh\.m2\repository\org\hibernate\orm\hibernate-core\6.4.1.Final\hibernate-core-6.4.1.Final.jar;C:\Users\siddh\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\siddh\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\siddh\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\siddh\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\siddh\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\siddh\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\siddh\.m2\repository\net\bytebuddy\byte-buddy\1.14.10\byte-buddy-1.14.10.jar;C:\Users\siddh\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\siddh\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\siddh\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\siddh\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\siddh\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\siddh\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\siddh\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\siddh\.m2\repository\org\springframework\data\spring-data-jpa\3.2.1\spring-data-jpa-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\data\spring-data-commons\3.2.1\spring-data-commons-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-orm\6.1.2\spring-orm-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-tx\6.1.2\spring-tx-6.1.2.jar;C:\Users\siddh\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-aspects\6.1.2\spring-aspects-6.1.2.jar;C:\Users\siddh\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\siddh\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\siddh\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\siddh\.m2\repository\org\modelmapper\modelmapper\3.0.0\modelmapper-3.0.0.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.1\spring-boot-starter-test-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-test\3.2.1\spring-boot-test-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.1\spring-boot-test-autoconfigure-3.2.1.jar;C:\Users\siddh\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\siddh\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\siddh\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\siddh\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\siddh\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\siddh\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\siddh\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\siddh\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\siddh\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\siddh\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;C:\Users\siddh\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\siddh\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\siddh\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\siddh\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\siddh\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\siddh\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\siddh\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\siddh\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\siddh\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar;C:\Users\siddh\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\siddh\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\siddh\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\siddh\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-core\6.1.2\spring-core-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-jcl\6.1.2\spring-jcl-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-test\6.1.2\spring-test-6.1.2.jar;C:\Users\siddh\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\siddh\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\siddh\.jdks\corretto-17.0.9\bin"/>
+    <property name="sun.java.command" value="C:\Users\siddh\AppData\Local\Temp\surefire1943543517374113608\surefirebooter-20240103223154448_3.jar C:\Users\siddh\AppData\Local\Temp\surefire1943543517374113608 2024-01-03T22-31-53_860-jvmRun1 surefire-20240103223154448_1tmp surefire_0-20240103223154448_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\siddh\IdeaProjects\Database\Database - JPA\target\test-classes;C:\Users\siddh\IdeaProjects\Database\Database - JPA\target\classes;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.1\spring-boot-starter-web-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.1\spring-boot-starter-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot\3.2.1\spring-boot-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.1\spring-boot-autoconfigure-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.1\spring-boot-starter-logging-3.2.1.jar;C:\Users\siddh\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\siddh\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\siddh\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\siddh\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\siddh\.m2\repository\org\slf4j\jul-to-slf4j\2.0.9\jul-to-slf4j-2.0.9.jar;C:\Users\siddh\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\siddh\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.1\spring-boot-starter-json-3.2.1.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.3\jackson-datatype-jdk8-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.3\jackson-datatype-jsr310-2.15.3.jar;C:\Users\siddh\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.3\jackson-module-parameter-names-2.15.3.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.1\spring-boot-starter-tomcat-3.2.1.jar;C:\Users\siddh\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.17\tomcat-embed-core-10.1.17.jar;C:\Users\siddh\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.17\tomcat-embed-el-10.1.17.jar;C:\Users\siddh\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.17\tomcat-embed-websocket-10.1.17.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-web\6.1.2\spring-web-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-beans\6.1.2\spring-beans-6.1.2.jar;C:\Users\siddh\.m2\repository\io\micrometer\micrometer-observation\1.12.1\micrometer-observation-1.12.1.jar;C:\Users\siddh\.m2\repository\io\micrometer\micrometer-commons\1.12.1\micrometer-commons-1.12.1.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-webmvc\6.1.2\spring-webmvc-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-aop\6.1.2\spring-aop-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-context\6.1.2\spring-context-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-expression\6.1.2\spring-expression-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.1\spring-boot-starter-data-jpa-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.1\spring-boot-starter-aop-3.2.1.jar;C:\Users\siddh\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.1\spring-boot-starter-jdbc-3.2.1.jar;C:\Users\siddh\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-jdbc\6.1.2\spring-jdbc-6.1.2.jar;C:\Users\siddh\.m2\repository\org\hibernate\orm\hibernate-core\6.4.1.Final\hibernate-core-6.4.1.Final.jar;C:\Users\siddh\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\siddh\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\siddh\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\siddh\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\siddh\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\siddh\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\siddh\.m2\repository\net\bytebuddy\byte-buddy\1.14.10\byte-buddy-1.14.10.jar;C:\Users\siddh\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\siddh\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\siddh\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\siddh\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\siddh\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\siddh\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\siddh\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\siddh\.m2\repository\org\springframework\data\spring-data-jpa\3.2.1\spring-data-jpa-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\data\spring-data-commons\3.2.1\spring-data-commons-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-orm\6.1.2\spring-orm-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-tx\6.1.2\spring-tx-6.1.2.jar;C:\Users\siddh\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-aspects\6.1.2\spring-aspects-6.1.2.jar;C:\Users\siddh\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\siddh\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\siddh\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\siddh\.m2\repository\org\modelmapper\modelmapper\3.0.0\modelmapper-3.0.0.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.1\spring-boot-starter-test-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-test\3.2.1\spring-boot-test-3.2.1.jar;C:\Users\siddh\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.1\spring-boot-test-autoconfigure-3.2.1.jar;C:\Users\siddh\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\siddh\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\siddh\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\siddh\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\siddh\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\siddh\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\siddh\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\siddh\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\siddh\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\siddh\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;C:\Users\siddh\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\siddh\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\siddh\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\siddh\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\siddh\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\siddh\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\siddh\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\siddh\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\siddh\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar;C:\Users\siddh\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\siddh\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\siddh\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\siddh\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-core\6.1.2\spring-core-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-jcl\6.1.2\spring-jcl-6.1.2.jar;C:\Users\siddh\.m2\repository\org\springframework\spring-test\6.1.2\spring-test-6.1.2.jar;C:\Users\siddh\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\siddh\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\siddh"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Users\siddh\.jdks\corretto-17.0.9"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\siddh\IdeaProjects\Database\Database - JPA"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="windows-1252"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\siddh\AppData\Local\Temp\surefire1943543517374113608\surefirebooter-20240103223154448_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.9+8-LTS"/>
+    <property name="user.name" value="siddh"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-17.0.9.8.1"/>
+    <property name="localRepository" value="C:\Users\siddh\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\siddh\AppData\Local\Temp\"/>
+    <property name="com.zaxxer.hikari.pool_number" value="11"/>
+    <property name="java.version" value="17.0.9"/>
+    <property name="user.dir" value="C:\Users\siddh\IdeaProjects\Database\Database - JPA"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="18436"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="windows-1252"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\siddh\.jdks\corretto-17.0.9\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Python311\Scripts\;C:\Program Files\Python311\;C:\DataBase\WINDOWS.X64_193000_db_home\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\msys64\mingw64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\siddh\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\siddh\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\php-8.2.11;;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\siddh\AppData\Local\Microsoft\WindowsApps;C:\Users\siddh\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\siddh\AppData\Local\Programs\Hyper\resources\bin;C:\Program Files\heroku\bin;C:\Users\siddh\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2022.2\bin;;C:\Apache Maven\bin;C:\Users\siddh\AppData\Roaming\npm;C:\Users\siddh\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Python311;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="17.0.9+8-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testThatFullUpdateAuthorSuccessfullyReturnsHttp404WhenAuthorDoesNotExists" classname="com.siddydevelops.Database.controllers.AuthorControllerIntegrationTests" time="1.303">
+    <system-out><![CDATA[2024-01-03T22:32:08.599+05:30  INFO 18436 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.siddydevelops.Database.controllers.AuthorControllerIntegrationTests]: AuthorControllerIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-03T22:32:08.690+05:30  INFO 18436 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.siddydevelops.Database.BooksApiApplication for test class com.siddydevelops.Database.controllers.AuthorControllerIntegrationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-03T22:32:08.787+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Starting AuthorControllerIntegrationTests using Java 17.0.9 with PID 18436 (started by siddh in C:\Users\siddh\IdeaProjects\Database\Database - JPA)
+2024-01-03T22:32:08.788+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : No active profile set, falling back to 1 default profile: "default"
+2024-01-03T22:32:09.230+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03T22:32:09.263+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+2024-01-03T22:32:09.465+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-01-03T22:32:09.466+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2024-01-03T22:32:09.467+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-01-03T22:32:09.470+05:30  INFO 18436 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03T22:32:09.478+05:30  INFO 18436 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-03T22:32:09.485+05:30  INFO 18436 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03T22:32:09.577+05:30  INFO 18436 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03T22:32:09.589+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:09.733+05:30  WARN 18436 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03T22:32:09.965+05:30  INFO 18436 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-01-03T22:32:09.965+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-01-03T22:32:09.971+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-01-03T22:32:09.987+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Started AuthorControllerIntegrationTests in 1.273 seconds (process running for 14.851)
+2024-01-03T22:32:11.288+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:11.295+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-01-03T22:32:11.299+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="testThatGetUpdatedAuthorWhenAuthorExists" classname="com.siddydevelops.Database.controllers.AuthorControllerIntegrationTests" time="0.299">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-03T22:32:11.367+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Starting AuthorControllerIntegrationTests using Java 17.0.9 with PID 18436 (started by siddh in C:\Users\siddh\IdeaProjects\Database\Database - JPA)
+2024-01-03T22:32:11.367+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : No active profile set, falling back to 1 default profile: "default"
+2024-01-03T22:32:11.670+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03T22:32:11.696+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2024-01-03T22:32:11.846+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-01-03T22:32:11.847+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:testdb user=SA
+2024-01-03T22:32:11.848+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-01-03T22:32:11.851+05:30  INFO 18436 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03T22:32:11.858+05:30  INFO 18436 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-03T22:32:11.868+05:30  INFO 18436 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03T22:32:11.941+05:30  INFO 18436 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03T22:32:11.948+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:12.070+05:30  WARN 18436 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03T22:32:12.257+05:30  INFO 18436 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-01-03T22:32:12.257+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-01-03T22:32:12.258+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-01-03T22:32:12.270+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Started AuthorControllerIntegrationTests in 0.965 seconds (process running for 17.134)
+2024-01-03T22:32:12.568+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:12.571+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-01-03T22:32:12.573+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="testThatCreateAuthorSuccessfullyReturnsHttp201Created" classname="com.siddydevelops.Database.controllers.AuthorControllerIntegrationTests" time="0.048">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-03T22:32:12.615+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Starting AuthorControllerIntegrationTests using Java 17.0.9 with PID 18436 (started by siddh in C:\Users\siddh\IdeaProjects\Database\Database - JPA)
+2024-01-03T22:32:12.616+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : No active profile set, falling back to 1 default profile: "default"
+2024-01-03T22:32:12.876+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03T22:32:12.897+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2024-01-03T22:32:13.035+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-01-03T22:32:13.037+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:testdb user=SA
+2024-01-03T22:32:13.037+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-01-03T22:32:13.039+05:30  INFO 18436 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03T22:32:13.044+05:30  INFO 18436 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-03T22:32:13.050+05:30  INFO 18436 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03T22:32:13.130+05:30  INFO 18436 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03T22:32:13.137+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:13.232+05:30  WARN 18436 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03T22:32:13.399+05:30  INFO 18436 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-01-03T22:32:13.399+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-01-03T22:32:13.400+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-01-03T22:32:13.410+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Started AuthorControllerIntegrationTests in 0.834 seconds (process running for 18.274)
+2024-01-03T22:32:13.451+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:13.457+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-01-03T22:32:13.461+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="testThatListAuthorSuccessfullyListOfAuthors" classname="com.siddydevelops.Database.controllers.AuthorControllerIntegrationTests" time="0.095">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-03T22:32:13.513+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Starting AuthorControllerIntegrationTests using Java 17.0.9 with PID 18436 (started by siddh in C:\Users\siddh\IdeaProjects\Database\Database - JPA)
+2024-01-03T22:32:13.514+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : No active profile set, falling back to 1 default profile: "default"
+2024-01-03T22:32:13.773+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03T22:32:13.793+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2024-01-03T22:32:13.902+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-01-03T22:32:13.903+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn40: url=jdbc:h2:mem:testdb user=SA
+2024-01-03T22:32:13.903+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-01-03T22:32:13.905+05:30  INFO 18436 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03T22:32:13.913+05:30  INFO 18436 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-03T22:32:13.922+05:30  INFO 18436 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03T22:32:13.998+05:30  INFO 18436 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03T22:32:14.006+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:14.112+05:30  WARN 18436 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03T22:32:14.288+05:30  INFO 18436 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-01-03T22:32:14.288+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-01-03T22:32:14.289+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-01-03T22:32:14.304+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Started AuthorControllerIntegrationTests in 0.837 seconds (process running for 19.167)
+2024-01-03T22:32:14.400+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:14.403+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-01-03T22:32:14.405+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="testThatGetAuthorSuccessfullyReturnsHttp200WhenAuthorExists" classname="com.siddydevelops.Database.controllers.AuthorControllerIntegrationTests" time="0.033">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-03T22:32:14.448+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Starting AuthorControllerIntegrationTests using Java 17.0.9 with PID 18436 (started by siddh in C:\Users\siddh\IdeaProjects\Database\Database - JPA)
+2024-01-03T22:32:14.448+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : No active profile set, falling back to 1 default profile: "default"
+2024-01-03T22:32:14.705+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03T22:32:14.726+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2024-01-03T22:32:14.844+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-01-03T22:32:14.846+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn50: url=jdbc:h2:mem:testdb user=SA
+2024-01-03T22:32:14.846+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-01-03T22:32:14.849+05:30  INFO 18436 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03T22:32:14.857+05:30  INFO 18436 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-03T22:32:14.866+05:30  INFO 18436 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03T22:32:14.945+05:30  INFO 18436 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03T22:32:14.957+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:15.054+05:30  WARN 18436 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03T22:32:15.204+05:30  INFO 18436 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-01-03T22:32:15.204+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-01-03T22:32:15.206+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-01-03T22:32:15.217+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Started AuthorControllerIntegrationTests in 0.806 seconds (process running for 20.08)
+2024-01-03T22:32:15.248+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:15.250+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-01-03T22:32:15.252+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="testThatFullUpdateAuthorSuccessfullyReturnsHttp200WhenAuthorExists" classname="com.siddydevelops.Database.controllers.AuthorControllerIntegrationTests" time="0.039">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-03T22:32:15.296+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Starting AuthorControllerIntegrationTests using Java 17.0.9 with PID 18436 (started by siddh in C:\Users\siddh\IdeaProjects\Database\Database - JPA)
+2024-01-03T22:32:15.296+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : No active profile set, falling back to 1 default profile: "default"
+2024-01-03T22:32:15.598+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03T22:32:15.625+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+2024-01-03T22:32:15.722+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2024-01-03T22:32:15.723+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn60: url=jdbc:h2:mem:testdb user=SA
+2024-01-03T22:32:15.724+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2024-01-03T22:32:15.726+05:30  INFO 18436 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03T22:32:15.734+05:30  INFO 18436 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-03T22:32:15.744+05:30  INFO 18436 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03T22:32:15.813+05:30  INFO 18436 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03T22:32:15.820+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:15.903+05:30  WARN 18436 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03T22:32:16.042+05:30  INFO 18436 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-01-03T22:32:16.042+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-01-03T22:32:16.043+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-01-03T22:32:16.061+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Started AuthorControllerIntegrationTests in 0.804 seconds (process running for 20.924)
+2024-01-03T22:32:16.098+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:16.101+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2024-01-03T22:32:16.103+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="testThatListAuthorSuccessfullyReturnsHttp200" classname="com.siddydevelops.Database.controllers.AuthorControllerIntegrationTests" time="0.02">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-03T22:32:16.145+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Starting AuthorControllerIntegrationTests using Java 17.0.9 with PID 18436 (started by siddh in C:\Users\siddh\IdeaProjects\Database\Database - JPA)
+2024-01-03T22:32:16.146+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : No active profile set, falling back to 1 default profile: "default"
+2024-01-03T22:32:16.396+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03T22:32:16.417+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2024-01-03T22:32:16.518+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2024-01-03T22:32:16.520+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection conn70: url=jdbc:h2:mem:testdb user=SA
+2024-01-03T22:32:16.520+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2024-01-03T22:32:16.522+05:30  INFO 18436 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03T22:32:16.528+05:30  INFO 18436 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-03T22:32:16.537+05:30  INFO 18436 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03T22:32:16.602+05:30  INFO 18436 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03T22:32:16.608+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:16.699+05:30  WARN 18436 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03T22:32:16.856+05:30  INFO 18436 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-01-03T22:32:16.856+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-01-03T22:32:16.857+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-01-03T22:32:16.866+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Started AuthorControllerIntegrationTests in 0.759 seconds (process running for 21.729)
+2024-01-03T22:32:16.886+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:16.889+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2024-01-03T22:32:16.890+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="testThatGetAuthorSuccessfullyReturnsHttp404WhenAuthorDoesNotExists" classname="com.siddydevelops.Database.controllers.AuthorControllerIntegrationTests" time="0.019">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-03T22:32:16.928+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Starting AuthorControllerIntegrationTests using Java 17.0.9 with PID 18436 (started by siddh in C:\Users\siddh\IdeaProjects\Database\Database - JPA)
+2024-01-03T22:32:16.928+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : No active profile set, falling back to 1 default profile: "default"
+2024-01-03T22:32:17.183+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03T22:32:17.201+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
+2024-01-03T22:32:17.287+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2024-01-03T22:32:17.288+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection conn80: url=jdbc:h2:mem:testdb user=SA
+2024-01-03T22:32:17.288+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2024-01-03T22:32:17.290+05:30  INFO 18436 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03T22:32:17.297+05:30  INFO 18436 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-03T22:32:17.304+05:30  INFO 18436 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03T22:32:17.367+05:30  INFO 18436 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03T22:32:17.372+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:17.445+05:30  WARN 18436 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03T22:32:17.570+05:30  INFO 18436 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-01-03T22:32:17.570+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-01-03T22:32:17.571+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-01-03T22:32:17.584+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Started AuthorControllerIntegrationTests in 0.69 seconds (process running for 22.447)
+2024-01-03T22:32:17.602+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:17.605+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2024-01-03T22:32:17.606+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="testThatCreateAuthorSuccessfullyReturnsSavedAuthor" classname="com.siddydevelops.Database.controllers.AuthorControllerIntegrationTests" time="0.052">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-03T22:32:17.656+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Starting AuthorControllerIntegrationTests using Java 17.0.9 with PID 18436 (started by siddh in C:\Users\siddh\IdeaProjects\Database\Database - JPA)
+2024-01-03T22:32:17.656+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : No active profile set, falling back to 1 default profile: "default"
+2024-01-03T22:32:17.894+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03T22:32:17.919+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2024-01-03T22:32:18.023+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2024-01-03T22:32:18.025+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection conn90: url=jdbc:h2:mem:testdb user=SA
+2024-01-03T22:32:18.025+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2024-01-03T22:32:18.028+05:30  INFO 18436 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03T22:32:18.035+05:30  INFO 18436 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-03T22:32:18.048+05:30  INFO 18436 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03T22:32:18.151+05:30  INFO 18436 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03T22:32:18.161+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:18.365+05:30  WARN 18436 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03T22:32:18.637+05:30  INFO 18436 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-01-03T22:32:18.638+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-01-03T22:32:18.640+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-01-03T22:32:18.658+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Started AuthorControllerIntegrationTests in 1.046 seconds (process running for 23.522)
+2024-01-03T22:32:18.710+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:18.715+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2024-01-03T22:32:18.718+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="testThatGetAuthorWhenAuthorExists" classname="com.siddydevelops.Database.controllers.AuthorControllerIntegrationTests" time="0.03">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-03T22:32:18.808+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Starting AuthorControllerIntegrationTests using Java 17.0.9 with PID 18436 (started by siddh in C:\Users\siddh\IdeaProjects\Database\Database - JPA)
+2024-01-03T22:32:18.809+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : No active profile set, falling back to 1 default profile: "default"
+2024-01-03T22:32:19.096+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03T22:32:19.115+05:30  INFO 18436 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2024-01-03T22:32:19.212+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2024-01-03T22:32:19.214+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection conn100: url=jdbc:h2:mem:testdb user=SA
+2024-01-03T22:32:19.215+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2024-01-03T22:32:19.217+05:30  INFO 18436 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03T22:32:19.223+05:30  INFO 18436 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-03T22:32:19.233+05:30  INFO 18436 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03T22:32:19.297+05:30  INFO 18436 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03T22:32:19.303+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:19.381+05:30  WARN 18436 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03T22:32:19.504+05:30  INFO 18436 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-01-03T22:32:19.504+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-01-03T22:32:19.505+05:30  INFO 18436 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-01-03T22:32:19.521+05:30  INFO 18436 --- [           main] c.s.D.c.AuthorControllerIntegrationTests : Started AuthorControllerIntegrationTests in 0.798 seconds (process running for 24.385)
+2024-01-03T22:32:19.551+05:30  INFO 18436 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03T22:32:19.553+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2024-01-03T22:32:19.554+05:30  INFO 18436 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+]]></system-out>
+  </testcase>
+</testsuite>

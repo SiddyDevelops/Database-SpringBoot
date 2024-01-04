@@ -1,4 +1,6 @@
-com\siddydevelops\Database\repositories\BookRepositoryIntegrationTests.class
 com\siddydevelops\Database\TestDataUtil.class
-com\siddydevelops\Database\DatabaseApplicationTests.class
-com\siddydevelops\Database\repositories\AuthorRepositoryIntegrationTests.class
+com\siddydevelops\Database\BooksApiApplicationTests.class
+com\siddydevelops\Database\controllers\AuthorControllerIntegrationTests.class
+com\siddydevelops\Database\controllers\BookControllerIntegrationTests.class
+com\siddydevelops\Database\repositories\BookEntityRepositoryIntegrationTests.class
+com\siddydevelops\Database\repositories\AuthorEntityRepositoryIntegrationTests.class

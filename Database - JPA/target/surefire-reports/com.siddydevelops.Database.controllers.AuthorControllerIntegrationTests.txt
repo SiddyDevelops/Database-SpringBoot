@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.siddydevelops.Database.controllers.AuthorControllerIntegrationTests
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.97 s -- in com.siddydevelops.Database.controllers.AuthorControllerIntegrationTests

@@ -1,4 +1,6 @@
-C:\Users\siddh\IdeaProjects\Database - JPA\src\test\java\com\siddydevelops\Database\repositories\AuthorRepositoryIntegrationTests.java
-C:\Users\siddh\IdeaProjects\Database - JPA\src\test\java\com\siddydevelops\Database\DatabaseApplicationTests.java
-C:\Users\siddh\IdeaProjects\Database - JPA\src\test\java\com\siddydevelops\Database\TestDataUtil.java
-C:\Users\siddh\IdeaProjects\Database - JPA\src\test\java\com\siddydevelops\Database\repositories\BookRepositoryIntegrationTests.java
+C:\Users\siddh\IdeaProjects\Database\Database - JPA\src\test\java\com\siddydevelops\Database\BooksApiApplicationTests.java
+C:\Users\siddh\IdeaProjects\Database\Database - JPA\src\test\java\com\siddydevelops\Database\TestDataUtil.java
+C:\Users\siddh\IdeaProjects\Database\Database - JPA\src\test\java\com\siddydevelops\Database\controllers\AuthorControllerIntegrationTests.java
+C:\Users\siddh\IdeaProjects\Database\Database - JPA\src\test\java\com\siddydevelops\Database\repositories\BookEntityRepositoryIntegrationTests.java
+C:\Users\siddh\IdeaProjects\Database\Database - JPA\src\test\java\com\siddydevelops\Database\controllers\BookControllerIntegrationTests.java
+C:\Users\siddh\IdeaProjects\Database\Database - JPA\src\test\java\com\siddydevelops\Database\repositories\AuthorEntityRepositoryIntegrationTests.java

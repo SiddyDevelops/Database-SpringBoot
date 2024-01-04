@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.siddydevelops.Database.DatabaseApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.063 s -- in com.siddydevelops.Database.DatabaseApplicationTests
